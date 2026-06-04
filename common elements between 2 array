@@ -1,0 +1,50 @@
+package javaclass_DS;
+import java.util.Scanner;
+public class Problems_task {
+
+	public static void main(String[] args) {
+//int []arr1 = {1,2,3,4,5,10,71};
+//int []arr2 = {3,4,5,6,71,8,11};
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter a arr1 size : ");
+		int n = scan.nextInt();
+		int []arr1 = new int[n];
+		System.out.print("Enter a Elements: ");
+		for(int i =0; i<n ; i++) {
+			arr1[i] = scan.nextInt();
+		}
+		
+		System.out.print("Enter a arr2 size : ");
+		int m = scan.nextInt();
+		int []arr2 = new int[m];
+		System.out.print("Enter a Elements: ");
+		for(int j =0; j<m; j++) {
+			arr2[j] = scan.nextInt();		}
+		
+		
+		System.out.println("Common Elements:");
+
+		for (int i =0; i<arr1.length;i++) {
+			for(int j =0; j< arr2.length; j++) {
+				if(arr1[i] == arr2[j]) {
+					System.out.print(arr1[i]+" ");
+					
+				}
+				
+			}
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
