@@ -1,0 +1,29 @@
+class Car {
+			private String model;
+			private String color;
+			
+			
+		public void setmodel(String m)
+			{
+				model = m;
+			}
+			public void setcolor(String co)
+			{
+				color = co;
+			}
+			public void display() {
+				System.out.println("Model : "+ model);
+				System.out.println("Color : "+ color);
+			}
+			
+		
+			
+		}
+		public class Problems_task {
+		public static void main(String[] args) {
+			Car c = new Car();
+			c.setmodel("TATA");
+			c.setcolor("Blue");
+			c.display();
+		
+			
