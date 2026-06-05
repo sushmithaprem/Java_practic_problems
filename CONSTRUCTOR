@@ -1,0 +1,48 @@
+//1. Default constructor
+
+//class Student{
+//	Student(){
+//		System.out.println("Default constructor !!");
+//	}
+//}			
+//			public class Problems_task {
+//				public static void main(String[] args) {
+//					Student s1 = new Student();
+//					Student s2 = new Student();
+//		
+					
+// 2. Parametrized constructor				
+					
+//class Student {
+//		int id;
+//		String name;
+//		Student(int i,String n){
+//			id = i;
+//			name = n;
+//		}
+//	}
+//		public class Problems_task {
+//			public static void main(String[] args) {
+//				Student s1 = new Student(44,"Sushmi");
+//					System.out.println(s1.id);
+//					System.out.print(s1.name);			
+//		
+					
+// 3. Constructor Overloading	
+class Student{
+	Student(){
+		System.out.println("Conatructor overloading");
+	}
+	Student(String name){
+		System.out.print(name);
+	}
+}
+	public class Problems_task {
+		public static void main(String[] args) {
+			Student s1 = new Student();
+			Student s2 = new Student("Sushmi");
+				
+		}
+		
+	}
+
