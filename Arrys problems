@@ -1,0 +1,91 @@
+// Second largest Element
+import java.util.*;
+
+public class Learn {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int [] arr = new int[n];
+		
+		for(int i=0; i< n; i++) {
+			arr[i] = sc.nextInt();		
+}
+		Arrays.sort(arr);
+		System.out.println(arr[n-2]);
+	}
+}
+
+// Find the max element & its index
+
+import java.util.*;
+public class Learn {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int [] arr = new int[n];
+		for(int i =0; i< n; i++) {
+			arr[i] = sc.nextInt();
+		}
+			int min = arr[0];
+			int index = 0;
+		for (int i=1; i > n; i++) {
+			if (arr[i] > min) {
+				min = arr[i];
+				index = i;
+			}
+				
+		}
+		System.out.println("Max Element: "+min);
+		System.out.println("Index: "+index);
+	}
+}
+
+// remove the duplicates from the sorted array
+
+import java.util.*;
+public class Learn {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int [] arr = new int[n];
+		for(int i=0; i<n; i++) {
+			arr[i] = sc.nextInt();
+		}
+		int j=0;
+		for (int i=1; i<n; i++) {
+			if(arr[i] != arr[j]) {
+				j++;
+				arr[j] = arr[i];
+			}
+		}
+		for(int i=0; i<= j; i++) {
+			System.out.print(arr[i] + " ");
+		}
+
+	}
+}
+
+// Rotate of arry by kth position 
+
+import java.util.*;
+public class Learn {
+	public static void main(String[] args) {
+		int [] nums = {1,2,3,4,5,6,7};
+		int k =3;
+		int n = nums.length;
+		k = k % n;
+		int [] temp = new int[n];
+		for(int i=0; i< n; i++) {
+			temp[(i + k) % n] = nums[i];
+	    }
+		for(int i=0; i<n; i++) {
+			nums[i] = temp[i];
+		}
+		for(int i=0; i< n; i++) {
+			System.out.print(nums[i]+ " ");
+		}
+	}	
+	
+}
+
