@@ -1,0 +1,23 @@
+import java.util.*;
+public class Learn{
+	public static void main(String [] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int [] arr = new int[n];
+		
+		// reads an Array
+		for(int i=0; i<n; i++) {
+			arr[i] = sc.nextInt();
+		}
+		int CurrentSum = arr[0];
+		int MaxSum = arr[0];
+		
+		// Traverse the array
+		for(int i=1; i< n; i++) {
+			CurrentSum = Math.max(arr[i], CurrentSum+arr[i]);
+			MaxSum = Math.max(MaxSum, CurrentSum);
+		}
+		System.out.print("Maximum sum of Subarray: "+MaxSum);
+
+	}
+}
